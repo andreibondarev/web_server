@@ -1,1 +1,2 @@
-I had to create simple webserver without any Ruby-external libraries that accomplish the following things:
+I had to create simple webserver without any external to Ruby libraries that accomplish the following things:
+

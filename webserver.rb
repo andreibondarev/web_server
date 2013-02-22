@@ -1,5 +1,3 @@
-## BrightRoll 2/4/12 - Andrei Bondarev
-
 require 'socket'
 require 'logger'
 

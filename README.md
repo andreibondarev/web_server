@@ -13,5 +13,5 @@
 <h3>Usage</h3>
 <ol>
 	<li>Run 'ruby webserver.rb'</li>
-	<li>Navigate to 'localhost:3000' to root / directory or specify an ID</li>
+	<li>Navigate to 'localhost:3000' to '/' (root) or specify an ID</li>
 </ol>

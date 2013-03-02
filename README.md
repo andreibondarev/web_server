@@ -9,3 +9,9 @@
 	<li>CSV look up the path and display the value</li>
 	<li>Append to existing cookie values</li>
 </ol>
+
+<h3>Usage</h3>
+<ol>
+	<li>Run 'ruby webserver.rb'</li>
+	<li>Navigate to 'localhost:3000' to root / directory or specify an ID</li>
+</ol>

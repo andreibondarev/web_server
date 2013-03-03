@@ -1,12 +1,20 @@
 require 'socket'
 require 'logger'
+require 'csv'
 
 class WebServerWrapper
-	attr_accessor :server
+	attr_accessor :server, :lookup_hash
 
 	def initialize
 		@server = TCPServer.new('localhost', 3000)
 		@logger = Logger.new('log.txt')
+		@lookup_hash = load_csv('lookup.csv')
+	end
+
+	def load_csv(file)
+		hash = {}
+		CSV.foreach(file) { |row| hash[row[0]] = row[1] }
+		hash
 	end
 
 	def start!
@@ -26,7 +34,12 @@ class WebServerWrapper
 			else
 				segments_array = find_segments(cookie_line)
 				segments_array << id
+
 				session.print "Set-Cookie: segments=#{segments_array.join(",")} Expires=Wed, 01-Jan-2020 12:12:12 GMT;\n\n"
+				
+				if lookup_hash.key?(id)
+					session.print "#{id} => #{lookup_hash[id]}"
+				end
 			end
 			
 			session.close

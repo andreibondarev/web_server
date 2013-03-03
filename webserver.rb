@@ -30,7 +30,7 @@ class WebServerWrapper
 			end
 
 			if id.empty?
-				session.print "\n#{cookie_line}" if !cookie_line.empty?
+				session.print("\nsegments=" + find_segments(cookie_line).join(',')) if cookie_line
 			else
 				segments_array = find_segments(cookie_line)
 				segments_array << id

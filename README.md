@@ -5,7 +5,7 @@
 	<li>Respond with ‘Hello World’ and return 200 OK</li>
 	<li>Set a cookie when a user visits</li>
 	<li>Set a 'segments' cookie with the requested path/ID</li>
-	<li>Print the value of 'segments' cookie when a user visit root</li>
+	<li>Print the value of 'segments' cookie when a user visits root</li>
 	<li>CSV look up the path/ID and display the corresponding value</li>
 	<li>Append to the existing 'segments' cookie</li>
 </ol>

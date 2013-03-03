@@ -8,7 +8,7 @@
 	<li><del>Print the value of 'segments' cookie when a user visit root</del></li>
 	<li><del>CSV look up the path/ID and display the corresponding value</del></li>
 	<li><del>Append to the existing 'segments' cookie</del></li>
-	<li>Switch to using the following format: <b>/:cookie_name/:value</b></li>
+	<li>Switch to use the following format: <b>/:cookie_name/:value</b></li>
 </ol>
 
 <h3>Usage</h3>

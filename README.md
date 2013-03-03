@@ -16,6 +16,6 @@
 	<li>Navigate to 'localhost:3000' to '/' (root) or specify an ID</li>
 		<ul>
 			<li>Navigating to root prints out the 'segments' cookie</li>
-			<li>A specified path/ID will be matched to the lookup.csv file and printed out</li>
+			<li>A specified path/ID (/111 for example) will be matched to the lookup.csv file and printed out</li>
 		</ul>
 </ol>

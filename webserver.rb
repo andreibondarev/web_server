@@ -47,10 +47,6 @@ class WebServerWrapper
 		end		
 	end
 
-	def close_session(session)
-		session.close
-	end
-
 	# Extract the path/ID/resource
 	def extract_id(session)
 		session.gets.split[1].gsub('/','')

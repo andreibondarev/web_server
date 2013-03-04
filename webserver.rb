@@ -62,7 +62,7 @@ class WebServerWrapper
 		if segments_str 
 			segments_str.gsub!('segments=','')
 			array = segments_str.split(',')
-			array.each { |a| a.strip! } # Remove any extra spaces
+			array.each(&:strip!) # Remove any extra spaces
 		else
 			[]
 		end
